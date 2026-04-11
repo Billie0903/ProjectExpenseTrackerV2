@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectExpenseTrackerV2">
         <activity
-            android:name=".MainActivity"
+            android:name=".ProjectListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,11 +21,13 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".ConfirmationActivity" />
-        <activity android:name=".ProjectListActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ProjectDetailActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".ExpenseListActivity" />
         <activity android:name=".AddEditExpenseActivity" />
+        <activity android:name=".EditProjectActivity" />
+
     </application>
 
 </manifest>
