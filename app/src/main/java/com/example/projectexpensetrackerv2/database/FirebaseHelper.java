@@ -1,8 +1,10 @@
-package com.example.projectexpensetrackerv2;
+package com.example.projectexpensetrackerv2.database;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkCapabilities;
+import com.example.projectexpensetrackerv2.models.Expense;
+import com.example.projectexpensetrackerv2.models.Project;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.WriteBatch;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.example.projectexpensetrackerv2;
+package com.example.projectexpensetrackerv2.activities;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
@@ -11,6 +11,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.appbar.MaterialToolbar;
 import java.util.Calendar;
+import com.example.projectexpensetrackerv2.R;
+import com.example.projectexpensetrackerv2.database.ProjectDatabaseHelper;
+import com.example.projectexpensetrackerv2.models.Expense;
 
 public class AddEditExpenseActivity extends AppCompatActivity {
 

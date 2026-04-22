@@ -1,4 +1,4 @@
-package com.example.projectexpensetrackerv2;
+package com.example.projectexpensetrackerv2.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.projectexpensetrackerv2.R;
+import com.example.projectexpensetrackerv2.activities.EditProjectActivity;
+import com.example.projectexpensetrackerv2.activities.ProjectDetailActivity;
+import com.example.projectexpensetrackerv2.activities.ProjectListActivity;
+import com.example.projectexpensetrackerv2.models.Project;
 import java.util.List;
 
 

@@ -1,4 +1,4 @@
-package com.example.projectexpensetrackerv2;
+package com.example.projectexpensetrackerv2.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.appbar.MaterialToolbar;
+import com.example.projectexpensetrackerv2.R;
+import com.example.projectexpensetrackerv2.database.ProjectDatabaseHelper;
+import com.example.projectexpensetrackerv2.models.Project;
 
 public class ProjectDetailActivity extends AppCompatActivity {
 

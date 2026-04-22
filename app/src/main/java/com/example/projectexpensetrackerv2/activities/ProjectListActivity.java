@@ -1,4 +1,4 @@
-package com.example.projectexpensetrackerv2;
+package com.example.projectexpensetrackerv2.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,11 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.List;
 import androidx.appcompat.widget.SearchView; // search bar
-
+import com.example.projectexpensetrackerv2.R;
+import com.example.projectexpensetrackerv2.adapters.ProjectAdapter;
+import com.example.projectexpensetrackerv2.database.FirebaseHelper;
+import com.example.projectexpensetrackerv2.database.ProjectDatabaseHelper;
+import com.example.projectexpensetrackerv2.models.Project;
 
 public class ProjectListActivity extends AppCompatActivity {
 

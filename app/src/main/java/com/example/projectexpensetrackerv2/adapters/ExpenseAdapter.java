@@ -1,5 +1,4 @@
-package com.example.projectexpensetrackerv2;
-
+package com.example.projectexpensetrackerv2.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +7,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.example.projectexpensetrackerv2.R;
+import com.example.projectexpensetrackerv2.activities.AddEditExpenseActivity;
+import com.example.projectexpensetrackerv2.activities.ExpenseDetailActivity;
+import com.example.projectexpensetrackerv2.activities.ExpenseListActivity;
+import com.example.projectexpensetrackerv2.models.Expense;
 import java.util.List;
 
 public class ExpenseAdapter extends ArrayAdapter<Expense> {

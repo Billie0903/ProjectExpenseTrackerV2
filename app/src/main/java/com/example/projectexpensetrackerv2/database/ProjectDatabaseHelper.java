@@ -1,10 +1,12 @@
-package com.example.projectexpensetrackerv2;
+package com.example.projectexpensetrackerv2.database;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import com.example.projectexpensetrackerv2.models.Expense;
+import com.example.projectexpensetrackerv2.models.Project;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -87,7 +89,7 @@ public class ProjectDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    // --- FEATURE B: PROJECT CRUD ---
+    //PROJECT CRUD
 
     public long addProject(Project project) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -173,7 +175,7 @@ public class ProjectDatabaseHelper extends SQLiteOpenHelper {
                 new String[]{String.valueOf(updatedProject.getId())});
     }
 
-    // --- FEATURE C: EXPENSE CRUD ---
+    //FEATURE C: EXPENSE CRUD
 
     public long addExpense(Expense e) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -252,7 +254,7 @@ public class ProjectDatabaseHelper extends SQLiteOpenHelper {
         db.delete("expenses", "id=?", new String[]{String.valueOf(id)});
     }
 
-    // --- FEATURE D: SEARCH LOGIC ---
+    // SEARCH LOGIC
 
     /**
      * Searches for projects where the name matches the query.
